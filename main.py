@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import jsonify
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -16,7 +17,6 @@ def name(value):
 def bob():
     val = {"value": "bob"}
     return jsonify(val)
-
 
 
 
