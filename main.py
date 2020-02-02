@@ -8,9 +8,9 @@ def hello():
     """Return a friendly HTTP greeting."""
     return 'Hello I like to make AI Apps'
 
-@app.route('/name/<value>')
-def name(value):
-    val = {"value": value}
+@app.route('/bob')
+def bob():
+    val = {"value": "bob"}
     return jsonify(val)
 
 if __name__ == '__main__':
